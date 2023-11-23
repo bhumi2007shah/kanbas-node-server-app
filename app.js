@@ -11,6 +11,7 @@ const app = express();
 app.use(cors());
 CourseRoutes(app);
 app.use(express.json());
+HelloRoutes(app);
 ModuleRoutes(app);
 Lab5(app);
 app.listen(process.env.PORT || 4000);
